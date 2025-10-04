@@ -95,7 +95,7 @@ export default function ExcelGrid() {
                       >
                         {isDropdownColumn(colIndex) ? (
                           <select
-                            ref={(el) => (cellRefs.current[cellId] = el)}
+                            ref={(el) => { cellRefs.current[cellId] = el }}
                             className="w-full bg-transparent outline-none"
                             onKeyDown={(e) => handleKeyDown(e, rowIndex, colIndex)}
                             onFocus={() => setSelectedCell(cellId)}
@@ -118,7 +118,7 @@ export default function ExcelGrid() {
                           </select>
                         ) : (
                           <input
-                            ref={(el) => (cellRefs.current[cellId] = el)}
+                            ref={(el) => { cellRefs.current[cellId] = el }}
                             type="text"
                             className="w-full bg-transparent outline-none"
                             placeholder=""
