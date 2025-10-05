@@ -13,15 +13,15 @@ export default function ExcelGrid() {
   }
 
   const columnTitles = [
-    "Producto",
-    "Categoría",
-    "Precio",
-    "Stock",
-    "Estado",
-    "Proveedor",
-    "Fecha",
-    "Cantidad",
-    "Descuento",
+    "Transporte",
+    "R.E Chofer",
+    "Desde",
+    "Hasta",
+    "Cliente",
+    "Peaje coche",
+    "Peaje cliente",
+    "H. Exced.",
+    "Observaciones",
     "Total",
   ]
 
@@ -103,16 +103,16 @@ export default function ExcelGrid() {
                             <option value=""></option>
                             {colIndex === 1 ? (
                               <>
-                                <option value="electrónica">Electrónica</option>
-                                <option value="ropa">Ropa</option>
-                                <option value="alimentos">Alimentos</option>
-                                <option value="hogar">Hogar</option>
+                                <option value="electrónica">ALBORNOZ JUAN LEONARDO</option>
+                                <option value="ropa">ALDERETE NICOLAS ALBERTO</option>
+                                <option value="alimentos">ARAGONA AGUSTIN</option>
+                                <option value="hogar">ARRIAZA CRISTHIAN GASTON</option>
                               </>
                             ) : (
                               <>
-                                <option value="activo">Activo</option>
-                                <option value="inactivo">Inactivo</option>
-                                <option value="pendiente">Pendiente</option>
+                                <option value="activo">ASOFARMA</option>
+                                <option value="inactivo">BACUER</option>
+                                <option value="pendiente">BASIGALUPO</option>
                               </>
                             )}
                           </select>
